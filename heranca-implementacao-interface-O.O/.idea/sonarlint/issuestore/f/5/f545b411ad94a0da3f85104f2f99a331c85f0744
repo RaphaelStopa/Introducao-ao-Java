@@ -1,0 +1,11 @@
+
+N
+java:S1854""8Remove this useless assignment to local variable "nova".(ÙÃ“â
+?
+java:S1481!")Remove this unused "nova" local variable.(³ø·ï
+<
+java:S1905""&Remove this unnecessary cast to "int".(ÙÃ“â
+M
+java:S1128"2Remove this unused import 'javax.print.DocFlavor'.(ÍØƒïúÿÿÿÿ
+0
+java:S1220""Move this file to a named package.

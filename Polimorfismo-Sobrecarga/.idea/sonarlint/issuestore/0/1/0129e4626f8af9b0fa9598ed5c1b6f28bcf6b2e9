@@ -1,0 +1,20 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¹’Âşÿÿÿÿ
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(£Áß•
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Øºô³
+E
+java:S1172"*Remove this unused method parameter "min".(®¶äşøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‘şß‘ùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ş™õà
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•³¢şúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‘şß‘ùÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(ÌÙóå
+S	java:S106("9Replace this use of System.out or System.err by a logger.(‘şß‘ùÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(îßü
+S	java:S106."9Replace this use of System.out or System.err by a logger.(±ıÑÿÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Ş™õà
+b
+java:S1192"GDefine a constant instead of duplicating this literal "Abanar" 3 times.(‘şß‘ùÿÿÿÿ
+0
+java:S1220""Move this file to a named package.

@@ -1,0 +1,390 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil JetBrains Mono;}{\f2\fnil Consolas;}{\f3\fnil\fcharset1 Segoe UI Symbol;}{\f4\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red255\green0\blue0;\red169\green183\blue198;\red204\green120\blue50;\red0\green0\blue255;\red152\green118\blue170;\red128\green128\blue128;\red104\green151\blue187;\red80\green120\blue116;\red255\green198\blue109;\red106\green135\blue89;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qj\cf1\f0\fs22\par
+\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\qj Uma dica muito importante eh que as vezes quando vc da um print com \cf2\f1\fs27 .nextLine()\par
+
+\pard\sa200\sl276\slmult1\qj\cf1\f0\fs22 o print vai duas vezes e da um erro de pulo se for um llaco param resolver e so por .next()\par
+""", com tr\'eas aspas abrindo e fechando, permite que voc\'ea escreva string em m\'faltiplas strings, sem necessitar concatena\'e7\'e3o, o que em um ambiente SQL, por exemplo, pode causar problemas de seguran\'e7a. \par
+\par
+Importante! - \'e9 poss\'edvel colocar m\'faltiplos par\'e2metros de tamanho interndertermidado quando n\'e3o se sabe o quanto ser\'e3o necess\'e1rio como em um vetor. Ex. public double soma(double... nums) \{ return Arrays.stream(nums). reduce(0.0, (t,a)-> t +a);\} \par
+\par
+Dicas importantes para java:\par
+
+\pard\sa200\sl276\slmult1\cf0 &&, \'e9 igual a and.\par
+||, \'e9 igual or, estas barras se faz segurando a alt + 124.\par
+^, \'e9 igual a XOR, ou exclusivo, onde os VV e FF dar\'e3o falso se tudo \'e9 igual.\par
+!, \'e9 igual a not, nega\'e7\'e3o\par
+?, ent\'e3o\par
+:, se n\'e3o, caso contrario.\par
+//, coment\'e1rio uma linha.\par
+/**/, coment\'e1rios varais linhas.\par
+/**, \'e9 os coment\'e1rios do doc do java\par
+\par
+\cf1 operadores de atribui\'e7\'e3o:\cf0\par
+=, -=, +=, *=, /=,%=\par
+i++, encrementa\par
+i--, decrementa\par
+
+\pard\sa200\sl276\slmult1\qj\par
+\cf1 Duas coisas MUUUITO importantes \cf0 que falarei duas vezes ate. A IDE, faz muitas coisas sozinhas. Bot\'e3o esquerdo e generate permite fazer contrutores, toStrings, hashcodes getters and setters e etc. Na aba code \'e9 poss\'edvel fazer um surround with, ele faz m\'e9todos tipo try e catch que uma forma de arrumar erros de valida\'e7\'e3o, entre outros mais simples como if else e etc.\par
+\par
+\cf1 Tipos de primitivos a Java:\cf0\par
+
+\pard\sa200\sl276\slmult1 vari\'e1veis sempre come\'e7am com letra minuscula;\par
+int = valor inteiro. Ex 10\par
+string = s\'e3o palavras, texto\par
+char = traduz um valor para a tabela Undicode e assim permite caracteres\par
+boolean = indica se algo retorna false ou true\par
+float = numero flutuante. Tem que por f no final do numero em java. ex: 2.0f\par
+\par
+Byte b = 100;\par
+Short s = 1000;\par
+Integer i = 1000;\par
+Long l = 1000L; //neste precisa do L no final\par
+Float f = 123.10F; // neste precisa do F no final\par
+Double d =  1235.768768;\par
+Boolean bo = true;\par
+Character c = '#';\par
+\par
+\cf1 SimplyStringProperty\cf0  x , \'e9 um tipo de string que as vezes \'e9 obrigat\'f3rio no javaFX. Ele tem a propriedade listeners, espelhamento, ou seja, se voc\'ea altera um valor do property ele replica na interface \par
+Use sempre aspas duplas para strings, a linguagem n\'e3o aceita aspas simples.\par
+\'e9 muito importante que ao vc fazer um numero float ou double digite o numero ponto e zero exe: 1,0. Isto for\'e7a a execu\'e7ao de float e \'e9 uma boa pratica. (geralmente se usa double mesmo).\par
+\par
+
+\pard\sa200\sl276\slmult1\qj\cf1 Tipos de primitivos explicados  \cf0 = byte(1), short(2),int(4),long(8). Todos estes fazem n\'fameros inteiros, a diferen\'e7a \'e9 qaquantidade de bytes que usam. Geralmente s\'f3 usa um int mesmo. Float(4) e double (8), todos fazem n\'fameros reais (geralmente se usa double). Char, faz caracteres especiais e boolenas e true ou false. \'e9 sempre possivel converter algo de byte menor para maior, o contrario pode perder precis\'e3o. Long pode ter underline para organizar e tem que ter um L no final, o mesmo vale para float. Todos podem ser convertidos em objects, basta escrever ele com a primeira letra mai\'fascula. Ai ele permite algumas mortifica\'e7\'e3o, ao contrario do primitivo puro\cf1\par
+\cf0\par
+Bot\'e3o esquerdo e \cf1 Generate\cf0 , vc pode fazer testes, m\'e9todos, sobrescritas e toString. As vezes s\'f3 de vc clicar em cima de algo n\'e3o especificado ele da esta op\'e7\'e3o. Perceba que se pode fazer getter em setters e equals e hacode tamb\'e9m.\par
+\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\qj Depois de um soutf, sempre vem quando queremos um \cf1 input do usu\'e1rio\cf0 , o tipo de classe de objeto que deseja receber, o nome de sua vari\'e1vel, o nome do local e o topo novamente ex: Double number2 = entrada.nextDouble();\par
+\cf3\f2\fs30\par
+
+\pard\sa200\sl276\slmult1\qj\cf0\f0\fs22 Classes no mesmo package, j\'e1 interagem entre si. N\'e3o precisam ser importadas.\par
+\par
+Para \cf1 renomear \cf0 algo, basta clicar sobre o nome e com o bot\'e3o esquerdo e ir em refactor,  depois remane e dai muda todos os nomes que eram iguais.\par
+\par
+lembre-se que tem um bot\'e3o autom\'e1tico para a \cf1 formata\'e7\'e3o correta do c\'f3digo\cf0 . Vc pode dar um ctrl+ alt+ l, que da na mesma.\par
+\par
+Metodo \cf1 equals e hashcode\cf0 . Vc consegue fazer automaticamnete, clicando com o bot\'e3o esquerdo e ir no generate. Basicamente ele faz com que seja poss\'edvel comparar dois objetos (vari\'e1veis na memoria, que mesmo podendo ter strings iguais por exemplo, n\'e3o podem ser comparadas normalmente, porque s\'e3o localizadas em pontos diferentes da memoria). O m\'e9todo hashcode tem como fun\'e7\'e3o fazer uma verifica\'e7\'e3o mais gen\'e9rica, vendo por padr\'f5es como comprimento da palavra e eh mais r\'e1pido, ai depois de eliminado as possibilidades que entra o equals, para fazer o checagem final n\'e3o tao gen\'e9rica mas mais demorada. O mesmo n\'e3o vale para primitivos. Primitivos s\'e3o mais facies de serem comparados, apenas com "==" \par
+\par
+\cf1 surround with\cf0 , \'e9 uma op\'e7\'e3o na aba code. Note as vezes voc\'ea faz comandos e depois quer coloca-los em um try, chath, ou if e else. Este comando te mostra todas as possibilidades e faz a partir da sua escolha. ctrl+alt+t .\par
+\par
+\cf1 Enum\cf0 , significa enumerar. \'e9 quase que uma classe, e feita pelo mesmo caminho. Cria um funcionalidade capaz de abstrair algo quase como uma vari\'e1vel, com a diferen\'e7a do uso ser igual ao atributo onde pode ser colocado em um m\'e9todo ou instancia para abstrair ainda mais aquilo, associando algo como valor a uma palavra qualquer. Ficando mais abstrata.\par
+\par
+\cf1 extend\cf0 , \'e9 um conceito interessante. Ele pega uma classe mais gen\'e9rica, chamada de m\'e3e ou superclass para estender outra classe menor, de nome filha ou subclass, ou seja, class gato (subclasse) extend felino (superclasse). Ou seja, ela vai pegar todo os atributos, construtores e m\'e9todos, j\'e1 existente dos felinos pre definidos e vai poder usar nesta classe e em outra como a classe tigre. A classe menor pode sobrescrever algo da maior se quiser. \'c9 um m\'e9todo de constru\'e7\'e3o por \cf1 heran\'e7a.\cf0\par
+\par
+\cf1 super\cf0 . chama um m\'e9todo de uma super classe (classe principal), ou seja, x classe estende a y com uma vari\'e1vel que voc\'ea quer, logo super(vari\'e1vel). Lembre-se que \'e9 poss\'edvel chamar m\'e9todo de classe superiores com o super.nomedometodo \par
+\par
+\cf1 parallelStrem\cf0 , vai computando uma strem em paralelo. Ver mais\par
+\par
+\cf1 private\cf0 , \'e9 s\'f3 visto, acess\'edvel por ele mesmo. Sem acesso para ningu\'e9m (em classe n\'e3o funfa). \'c9 sempre usada quando a atributo j\'e1 tem um getter ou setter \par
+\par
+\cf1 default\cf0  (pacote), classe \'e9 visto somente dentro do package (\'e9 o padr\'e3o de quando n\'e3o se indica nada)\par
+\par
+\cf1 protected\cf0 , modificador que torna o membro acess\'edvel \'e0s classes do mesmo pacote ou atrav\'e9s de heran\'e7a, seus membros herdados n\'e3o s\'e3o acess\'edveis a outras classes fora do pacote em que foram declarados.\par
+\par
+\cf1 public\cf0 , \'e9 visto por todos.\par
+\par
+\cf1 Private\cf0 : A \'fanica classe que tem acesso ao atributo \'e9 a pr\'f3pria classe que o define, ou seja, se uma classe Pessoa declara um atributo privado chamado nome, somente a classe Pessoa ter\'e1 acesso a ele.\par
+\cf1\par
+Default\cf0 : Tem acesso a um atributo default (identificado pela aus\'eancia de modificadores) todas as classes que estiverem no mesmo pacote que a classe que possui o atributo.\par
+\par
+\cf1 Protected\cf0 : Esse \'e9 o que pega mais gente, ele \'e9 praticamente igual ao default, com a diferen\'e7a de que se uma classe (mesmo que esteja fora do pacote) estende da classe com o atributo protected, ela ter\'e1 acesso a ele. Ent\'e3o o acesso \'e9 por pacote e por heran\'e7a.\par
+\par
+\cf1 Public\cf0 : Esse \'e9 f\'e1cil, todos tem acesso :)\par
+\cf1\par
+ \cf0 Modifier      Class   Package   Subclass   World\par
+\f3\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\f0\par
+ public          \f3\u10004?\f0         \f3\u10004?\f0          \f3\u10004?\f0          \f3\u10004?\f0\par
+\par
+ protected       \f3\u10004?\f0         \f3\u10004?\f0          \f3\u10004?\f0          \f3\u10008?\f0\par
+\par
+ no modifier     \f3\u10004?\f0         \f3\u10004?\f0          \f3\u10008?\f0          \f3\u10008?\f0\par
+\par
+ private         \f3\u10004?\f0         \f3\u10008?\f0          \f3\u10008?\f0          \f3\u10008?\f0\par
+\f3\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\f0\par
+\par
+\cf1 final\cf0 , quando \'e9 aplicado na classe, n\'e3o permite estende-la, nos m\'e9todos impede que o mesmo seja sobrescrito (overriding) na subclasse, e nos valores de vari\'e1veis n\'e3o pode ser alterado depois que j\'e1 tenha sido atribu\'eddo um valor inicialmente.\par
+\cf1\par
+toString\cf0 , ele \'e9 importante porque as vezes em um print vem o local do arquivo na mem\'f3ria (n\'fameros) e n\'e3o o nome (string). Este m\'e9todo sobrescreve isto e volta a string no retorno. Para imprimir tem que ter a vari\'e1vel .toString. Tem o m\'e9todo do toString feito pela propria IDE, ele mesmo, sobrescreve o resultado e retorna algo ao seu desejo. Este nome pode ser mudado, n\'e3o precisa ser "toString" .\par
+\par
+\cf1 getters e setters\cf0 , s\'e3o m\'e9todos de boas pratica pois impedem acesso a vari\'e1vel direto. As IDEs tem mecanismos para criar automaticamente, do mesmo jeito que o equals e hashcode. Basicamente ao definir uma vari\'e1vel, para a tornar mais segura, vc a define como privada e faz um construtor "get", para instanciar e um "set" que modifica de alguma forma, ou corrige erros, ou seja, pode ser usada at\'e9 para validar. A partir delas que voce acessa dai. \par
+\par
+\cf1 Iterator\cf0 , \'e9 uma interagir. Ele interage como o que manda, mas a gest\'e3o ele que ele n\'e3o tem um tamanho m\'e1ximo. Ele interage \'e0 medida que vai add ou aumentando uma lista tamb\'e9m. Bom quando n\'e3o se sabe o final \par
+\par
+\cf1 instanciar\cf0 , \'e9 quando ex. ana mae = new ana(); e faz os . algumas coisa\par
+\par
+\cf1 Abstratos\cf0 . Por padr\'e3o todos os m\'e9todos de interface s\'e3o p\'fablicos e abstratos. Abstrato \'e9 quando o m\'e9todo n\'e3o tem corpo ou seja \{\} e n\'e3o podem ser instanciadas. Caso tenha que definir que um m\'e9todo \'e9 abstrato que basta escrever abstract, depois do grau da visibilidade. Isto, possibilita instanciar m\'e9todos ainda n\'e3o definidos, mas que ter\'e3o que ser definidos na classe que pretende coloca-los, e possibilita overrides que geram polimorfismo. Quando se coloca a abstract em uma superclasse/ m\'e3e, significa que n\'e3o em si n\'e3o poder\'e1 ser instanciada apenas estendida de alguma forma.\par
+
+\pard\sa200\sl276\slmult1\par
+\cf1 interfece\cf0 , \'e9 um tipo de classe (se cria quase igual apenas n\'e3o escolhendo classe mais sim interface), onde voc\'ea cria m\'e9todos para instanciar. Eles podem ser abstratos ou n\'e3o, ou seja, definidos ou n\'e3o. \'c9 um conceito importante no polimorfismo. Para usar depois de os criar, vai na classe que deseja o acesso e depois do seu nome escreva implement, e o nome da interface \par
+\par
+\par
+\cf1 static\cf0 , indica que a vari\'e1vel  ou metodo n\'e3o pertence uma instancia EH UMA VARIAVEL GLOBAL (nao pode ser instanciado, pois apenas possui em espa\'e7o de memoria definido e isto nao mudara) e sim a classe, ou seja voc\'ea tem que entrar classe para alterar. Elas nao dependem de um objeto intanciado para ser usada, pois assim que o progama roda elas sao alocas na memoria e diferente das outras elas nao deixa de existir depois da execu\'e7ao do bloco. Se vc chamar  outros objetos desta classe que possui o var static,  ele tera este valor definido inicialmente na classe, nao podera ser moficado. Nao existira sua intancia pq vc indicou que o valor eh aquele  nao muda.\par
+\par
+\cf1 final static\cf0 , significa que em momento nem um do c\'f3digo aquela "vari\'e1vel" pode ser mudada. Estes tipo tem seu nome em caixa alta por conven\'e7\'e3o.\par
+\par
+\cf1 Cast\cf0 , sempre \'e9 poss\'edvel converter algo usando Cast mais informa\'e7\'f5es de memoria podem se perder.\par
+Outra conver\'e7ao \'e9 int numero = Integer.parseInt(variavel string);\par
+\cf1 Generics\cf0 , faz com que uma class possa retornar algo ainda n\'e3o especificado sem ter que ficar dando parse (conversa\'e7\'e3o) entre int, string e etc. Podendo s\'f3 retornar no final.\par
+\par
+\cf1 Wrapper\cf0 , transforma primitivos em objetos. Eles come\'e7am com Letra mai\'fasculas e pode ser editados. Assim se consegue usar ponto alguma coisa e editar valores transformar em string e etc, ate mesmos voltar a sua forma primitiva\par
+\par
+.equals, compara se algo \'e9 igual a algo, sem levar em considera\'e7\'e3o do tipo do objeto em si.\par
+.trim, tira os espa\'e7os.\par
+.tolength, v\'ea o tamanho de algo. S\'f3 poss\'edvel em primitivos.\par
+.replace, Troca algo. S\'f3 poss\'edvel em primitivos.\par
+.toUpperCase, deixa em caixa alta. S\'f3 poss\'edvel em primitivos.\par
+.concat, concatena. S\'f3 poss\'edvel em primitivos.\par
+.charAt(), pinta o caractere que na posi\'e7\'e3o que voc\'ea escolheu.\par
+.toLowerCase(), deixa em letra minuscula.\par
+.startsWith(), v\'ea se come\'e7a  com algo.\par
+.endsWith(), v\'ea se termina com algo.\par
+.length(), v\'ea o comprimento de algo.\par
+.equals(), v\'ea se algo  \'e9 igual com algo.\par
+.contains(), se algo contem algo.\par
+indexOf(), a posi\'e7\'e3o onde tem algo.\par
+.substring(), ver o que tem em uma determina posi\'e7\'e3o.\par
+.equalsIgnoredCase(), v\'ea se algo \'e9 igual a algo ignorando caixas altas ou baixas.\par
+\par
+\cf1 JUnit\cf0  \'e9 um framework open-source, que permite testes de c\'f3digo. Voc\'ea instala em sua IDE e voc\'ea faz um test de uma classe que voc\'ea queira ver o funcionamento e roda. Para ele achar o arquivo este arquivo tem que ter ao menos uma par\'e2metro a ser testado. \'e9 uma maneira muito faz f\'e1cil que fazer um main para cada ponto de c\'f3digo que queira testar.\par
+\par
+\cf1 break\cf0 , fazem sentido dentro de um la\'e7o de repeti\'e7\'e3o, onde ao achar algo ele quebra aquele ciclo. \par
+\cf1\par
+continue\cf0 , e se chegar em x, v\'e1 para y\par
+\par
+\cf1 Formatar\cf0 : String.format() (s\'f3 para constar eh parecido com a formatacao de python), similar com o sout. Para formatar eh entes aspas, %s(para string), %d(para double), %f(para float). Entre os caracteres voc\'ea pode colocar (seprando por vigula) e .2 para restinguir a quantidade. \par
+\par
+\cf1 SimpleDateFormat, \cf0\'e9 um objeto que quando instanciado mostra a hora atual com m\'eas e ano do jeito que desejar. Ex: SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss") \par
+\par
+\par
+\cf1 ATALHOS.\par
+Main\cf0 ,\cf1  \cf0 cria o metodo main.\par
+\cf1 Sout\cf0 , cria o System. out.println(), que imprime em terminal.\par
+\par
+{{\field{\*\fldinst{HYPERLINK https://www.youtube.com/watch?v=Ea71ar8V8LI&list=PL62G310vn6nHrMr1tFLNOYP_c73m6nAzL&index=12 }}{\fldrslt{https://www.youtube.com/watch?v=Ea71ar8V8LI&list=PL62G310vn6nHrMr1tFLNOYP_c73m6nAzL&index=12\ul0\cf0}}}}\f0\fs22\par
+\par
+{{\field{\*\fldinst{HYPERLINK https://www.devmedia.com.br/diferencas-entre-treeset-hashset-e-linkedhashset-em-java/29077 }}{\fldrslt{https://www.devmedia.com.br/diferencas-entre-treeset-hashset-e-linkedhashset-em-java/29077\ul0\cf0}}}}\f0\fs22\par
+\par
+o que eh classe\par
+o que eh objeto\par
+o que eh contrutor\par
+array\par
+matriz\par
+set\par
+list\par
+queue(fila)\par
+stack (pilha)\par
+map\par
+{{\field{\*\fldinst{HYPERLINK https://www.guj.com.br/t/criar-um-unico-hashmap-que-contem-uma-lista-de-funcionarios-visivel-para-o-main-e-para-a-classe-funcionario/356834 }}{\fldrslt{https://www.guj.com.br/t/criar-um-unico-hashmap-que-contem-uma-lista-de-funcionarios-visivel-para-o-main-e-para-a-classe-funcionario/356834\ul0\cf0}}}}\f0\fs22\par
+\par
+Set, eh um conjunto, e nao ordenado e nao possio indice de busca. e nao aceita repeti\'e7ao\par
+\par
+List, aceita repeti\'e7ao, possui indice de busca\par
+\par
+Map, parecem dicionarios. Contem chaves e valores. Os elementos nao sao ordenados. Chaves nao aceitam repeti\'e7ao, valor sim\par
+\par
+rever foreach java\par
+\cf1 -----------ver o que deixei no curos como nomea\'e7ao e tipo de listas e etc\par
+boas particas tambem\par
+metodo main\par
+e nome das clases\par
+\par
+\cf0 Exemplo de referencair metodo, no caso o sout para.\par
+Consumer<String> print = System.out::print;\par
+Chamei o comsumer ou seja que s\'f3 consume dados. Disse que o impreco ser uma string mais poderia ser um objeto por exemplo e agora basta chamar o print, ai voc\'ea pode fazer um forEach(print) para cada \cf1\par
+\par
+Criar lista matrizes e afins.\par
+\cf0 List<String> aprovados = Arrays. asList(); // lista simples\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf2\f1\fs27 ArrayList<String> \cf5\i funcionariosConcursado \cf2\i0 = \cf3 new \cf2 ArrayList()\cf3 ;\f0  // lista\cf0\fs22\lang22\par
+
+\pard\sa200\sl276\slmult1 Iterator<String> iterator = aprovados.iterator(); //interar \par
+\cf6\f1\fs27 String [][] funcionariosConcursado = new String[2][100];//Duas colunas 100 funcionarios assim seia em matriz, vou usar lista\par
+\cf2 Pessoa[] p = \cf3 new \cf2 Pessoa[\cf7 2\cf2 ]\cf3 ;\cf6 //vetor, criei 2 pessoas\par
+\par
+\cf0\f0\fs22\par
+Exemplo de referencair metodo, no caso o sout para.\par
+Consumer<String> print = System.out::print;\par
+\par
+\cf1 criar numeros randomicos.\cf0\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf2\f2\fs30 Random \cf5 generate \cf2 = \cf3 new \cf2 Random()\cf3 ;\cf6 // isto cria um objeto randomico\line\line\cf3 int \cf5 number \cf2 = \cf5 generate\cf2 .nextInt(\cf7 60\cf2 )\cf3 ; \cf6 // cria um numero randomico de 0 a 60\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\fs22\par
+\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf1 Conven\'e7\'e3o.\par
+\cf0 Final, tem que ser nomeada com letras maiusculas.\par
+Double, tem que ser escritos com ponto e zero, para garantir.\cf2\f2\fs30\lang1046\par
+\f4\par
+\cf1\f0\fs22\lang22 Percorrer listas e afins\par
+Metodo mais simples foreach\par
+\cf3\f1\fs27 for \cf2 (String number : \cf5\i funcionariosConcursado\cf2\i0 ) \{\cf6 //\line     \cf2 System.\cf5\i out\cf2\i0 .println(number)\cf3 ;\par
+\par
+\f0\lang1046 com iterator\par
+for (Iterator iterator = contatos.iterator(); iterator.hasNext(); ) \{ ContatoT c = (ContatoT) iterator.next(); System.out.println (c.getNome()); \}\par
+\par
+com for\par
+for(int i=0;i<contatos.size();i++)\{ System.out.println(contatos.get(i).getNome()); \}\cf1\fs22\lang22\par
+\par
+
+\pard\sa200\sl276\slmult1\cf0 usando stream para percorrer (podia ser for ou while twmbem)\par
+Stream<String> stream = aprovados. stream();\par
+stream.forEach(System.out::println)\par
+\par
+Stream em API maps\par
+\par
+stream API nos prints \par
+\cf1 .toBinaryString() \cf0 = Converte para bin\'e1rio. \par
+\cf1 Integer.parseInt( op1, op2) \cf0 = Retorna de integer de uma string em lambda. Pode ter outro par\'e2metro para convers\'e3o, bin\'e1rio, octal e etc. \par
+\cf1 Double.parseDouble() \cf0 = Converte uma string em double. \par
+\cf1 .filter() \cf0 = Filtra aquele mapa em stream de cordo com uma condi\'e7\'e3o de  predicate por exemplo. \par
+\cf1 .map() \cf0 = Cria um novo mapa daquela lista em stream, na qual voc\'ea come\'e7ou uma condi\'e7\'e3o. \par
+\cf1 .reduce() \cf0 e reduce(soma) = Aceita at\'e9 2 par\'e2metros. Reduz uma lista seguindo uma condicao.\par
+\cf1 .ifPresent() \cf0 = Faz uma a\'e7\'e3o como imprimir se algo na lista estiver presente ou ela n\'e3o estar vazia. \par
+\cf1 .negate() \cf0 = Ou seja X = true, condi\'e7\'e3o se torna false por exemplo. \par
+\cf1 .allMatch\cf0 (o que era ser checado, melhor um predicate) = Se todos os itens de uma lista em stream bater. Retorna verdadeiro e falso. \par
+\cf1 .anyMatch() \cf0 = Se algum item de uma lista em stream bate. Retorna verdadeiro e falso. \cf1\par
+.noneMatch() \cf0 = Se nem um item de uma lista em stream bate. Retorna verdadeiro e falso. \par
+.\cf1 reverse() \cf0 = Inverte a ordem da lista ou mesmo palavra. \par
+\cf1 .get() \cf0 = Pega um item em uma posi\'e7\'e3o da lista. \par
+\cf1 .max() \cf0 = Para por uma fun\'e7\'e3o ou mesmo puxar valor m\'e1ximo de uma lista. \cf1\par
+.min() \cf0 = Para por uma fun\'e7\'e3o ou mesmo puxar valor m\'ednimo de uma lista. \par
+\cf1 .takeWhile() \cf0 = Pegue itens numa lista ate x condi\'e7\'e3o. \par
+\cf1 .skip() \cf0 = Pula item de uma lista em x quantidades \cf1\par
+.limit() \cf0 = percorre uma lista at\'e9 o limite x. \par
+\cf1 .distinct() \cf0 = \'e9 um me3todo de pegar apenas um item em lista mesmo que se pare\'e7a igual a outro. Tirando duplicados. Tem que ser usado com o hascode e equals. \par
+\cf1 .parallelStream() \cf0 = A diferen\'e7a entre a stream, que ele que repete a opera\'e7\'e3o, por exemplo soma, a cada item. A stream faz de tudo de uma vez.\par
+\cf1 .stream() \cf0 = \'e9 uma forma de percorrer mapas e listas, onde, enquanto for recebendo informa\'e7\'e3o ele ira continuar informa\'e7\'e3o. \'c9 a melhor forma de manipula\'e7\'e3o mesmo sem API, por basta add outro modificadores. \par
+\par
+\par
+  \par
+\par
+Stream API \par
+// Pega um pedicato, para uma condi\'e7\'e3o lambda. Usada para checar condi\'e7\'f5es \par
+predicate<objeto> nome = a -> a.variavel >= 7;  \par
+\par
+// fun\'e7\'e3o duas entrada e um retorno \par
+BiFunction<Objeto, tipo, retorno/resultado> calcularAlgo = (qualquer, vari\'e1vel) -> media.operacao(vari\'e1vel) \par
+\par
+// fun\'e7\'e3o com duas entradas de mesmo tipo e retorna um mesmo tipo \par
+BinaryOperator<Tipo> a\'e7\'e3o = (recebe1, recebe2) -> recebe1 + recebe2; \par
+\par
+// fun\'e7\'e3o que recebe um tipo e retorna outro \par
+Function<Recebe Tipo, Retorna inteiro> nomeDaFuncao = s -> Integer.parseInt(s, 2); \par
+//item \par
+Function<Objeto, String> iraVoltarUmaStringDoItemFormatado = p -> "String" + p.variavel1 + "Continuando" + p.variavel2; \par
+\par
+// operador Unario. Apenas uma opera\'e7\'e3o, um tipo de item  \par
+UnaryOperator<Tipo> nome =  n -> n.toUpperCase(); \par
+lista.stream(nome do operador).map \par
+\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf2\f4\fs30\lang1046\par
+\par
+\cf1\f0\fs22\lang22 Codigos.\cf2\f4\fs30\lang1046\par
+\cf3\f2 public class \cf2 Caixa<\cf8 TIPO\cf2 > \{\line     \line     \cf3 private \cf8 TIPO \cf5 coisa\cf3 ;\line\line     public void  \cf9 aguardar\cf2 (\cf8 TIPO \cf2 coisa) \{\line         \cf3 this\cf2 .\cf5 coisa \cf2 = coisa\cf3 ;\line     \cf2\}\line\line     \cf3 public \cf8 TIPO \cf9 abrir\cf2 () \{\line         \cf3 return \cf5 coisa\cf3 ;\line     \cf2\}\line\}\line\par
+\cf3\f4\par
+e dai se intancia assim \par
+\cf2\f2 Caixa<DefinaOTipoAqui> \cf5 caixaA \cf2 = \cf3 new \cf2 Caixa<>()\cf3 ;\par
+\cf2\f4\par
+\par
+\cf1\f0\fs22\lang22 Exemplo entrada.\cf2\f4\fs30\lang1046\par
+\f2 Scanner entrada = \cf3 new \cf2 Scanner(System.\cf5\i in\cf2\i0 )\cf3 ; \cf6 // tipo de entrda esta eh o teclado\line\line     \cf2 System.\cf5\i out\cf2\i0 .print(\cf10 "digite algo:"\cf2 )\cf3 ;\line     \cf2 String algo = entrada.nextLine()\cf3 ;\line\line     \cf2 System.\cf5\i out\cf2\i0 .print(algo)\cf3 ;\line\line     \cf2 entrada.close()\cf3 ; \cf6 // nescessario para parrar\line\cf2\}\par
+\par
+\f4 eh possivel operar direto em inputs \f2 System.\cf5\i out\cf2\i0 .println(\cf7 7 \cf2 / entrada.nextInt())\cf3 ;\cf2\par
+\par
+
+\pard\sa200\sl276\slmult1\cf1\f0\fs22\lang22 Criar numeros randomicos.\cf0\par
+
+\pard\box\brdrdash\brdrw0 \sa200\sl276\slmult1\cf2\f2\fs30 Random \cf5 generate \cf2 = \cf3 new \cf2 Random()\cf3 ;\cf6 // isto cria um objeto randomico\line\line\cf3 int \cf5 number \cf2 = \cf5 generate\cf2 .nextInt(\cf7 60\cf2 )\cf3 ; \cf6 // cria um numero randomico de 0 a 60\par
+\par
+\cf1\f0\fs22 Exemplo de la\'e7o, eh possivel dar um n ome ao la\'e7o escrevendo depois do for.\par
+\cf3\f2\fs30\lang1046 int \cf2 x\cf3 ;\line for\cf2 (x= \cf7 2 \cf3 ; \cf2 x <\cf7 10\cf3 ; \cf2 x++) \{\line     System.\cf5\i out\cf2\i0 .println(\cf10 "x = " \cf2 +x)\cf3 ;\line\cf2\}\par
+\par
+\cf3 for \cf2 (\cf3 int \cf2 x = \cf7 10\cf3 ; \cf2 x >= \cf7 0\cf3 ; \cf2 x-=\cf7 2\cf2 )\{\par
+\par
+\cf3 int \cf2 contador = \cf7 0\cf3 ;\line while \cf2 (contador <= \cf7 20\cf2 ) \{\line     System.\cf5\i out\cf2\i0 .printf(\cf10 "i = $d\cf3\\n\cf10 "\cf3 , \cf2 contador)\cf3 ;\line     \cf2 contador += \cf7 2\cf3 ;\line\cf2\}\par
+\par
+\f4 "\cf1 for each\cf2 ", para cada, e bom para arrays e pode ser escrito assim, ex:\par
+for(double nota: notas)\{// nota anota no array\par
+\f2     System.\cf5\i out\cf2\i0 .printf(\cf10\f4 nota\cf2\f2 )\cf3 ;\f4  // printa a nota\cf2\par
+\}\par
+\par
+\cf1 do while\cf2 , ira rodar no minimo uma vez, faz x enquanto x ou outro x nao for true\par
+\f2 String texto = \cf10 ""\cf3 ;\line do \cf2\{\line     System.\cf5\i out\cf2\i0 .println(\cf10 "palvra x"\cf2 )\cf3 ;\line     \cf2 texto = entrada.nextLine()\cf3 ;\line\cf2\}\cf3 while \cf2 (!texto.equalsIgnoreCase(\cf10 "por favor"\cf2 ))\cf3 ;\cf2\f4\par
+\par
+\par
+\cf1 la\'e7o bem complexo\cf2\par
+\cf3\f2 int \cf2 quantidadesDeNotas = \cf7 0\cf3 ;\line double \cf2 nota = \cf7 0\cf3 ;\line double \cf2 total = \cf7 0\cf3 ;\line\line while \cf2 (nota != -\cf7 1\cf2 ) \{\line     System.\cf5\i out\cf2\i0 .print(\cf10 "digite a nota caraio ou -1 para sair: "\cf2 )\cf3 ;\line     \cf2 nota = entrada.nextDouble()\cf3 ;\line if\cf2 (nota <= \cf7 10 \cf2 && nota >= \cf7 0\cf2 ) \{\line     total += nota\cf3 ;\line     \cf2 quantidadesDeNotas++\cf3 ;\line\cf2\}\cf3 else if\cf2 (nota != -\cf7 1\cf2 ) \{\line     System.\cf5\i out\cf2\i0 .println(\cf10 "nota invalida!"\cf2 )\cf3 ;\line\cf2\}\line\}\line\cf3 double \cf2 media = total / quantidadesDeNotas\cf3 ;\line\cf2 System.\cf5\i out\cf2\i0 .println(\cf10 "media" \cf2 + media)\cf3 ;\cf2\par
+\cf6\f4\lang22\par
+\cf2\lang1046\par
+\cf1 exemplo break e \f2 switch\cf2\f4\par
+\f2 String faixa = \cf10 "marron"\cf3 ;\line\line switch \cf2 (faixa.toLowerCase()) \{\line     \cf3 case \cf10 "preta"\cf2 :\f4 // caso tenha mais um velor de entrada que da o mesmo resultado basta colocar outro case a frente do outro e dar e dois pontos novamente\f2\line         System.\cf5\i out\cf2\i0 .println(\cf10 "foi"\cf2 )\cf3 ;\line     case \cf10 "cinza"\cf2 :\line         System.\cf5\i out\cf2\i0 .println(\cf10 "rapadura"\cf2 )\cf3 ;\line         break;\line     default\cf2 :\line         System.\cf5\i out\cf2\i0 .println(\cf10 "sao so este"\cf2 )\cf3 ;\line\line\cf2\}\par
+\cf0\f0\fs22\lang22 neste exemplo, se ele digitar preta vai aparecer "foi" e o default. Se for cinza sera apenas o cinza e sem o default por causa do break;\par
+\par
+\cf1\f4\fs30\lang1046 tratamento de erros\par
+\cf3\f2 try \cf2\{\line     System.\cf5\i out\cf2\i0 .println(\cf7 7 \cf2 / \cf7 0\cf2 )\cf3 ;\line\cf2\} \cf3 catch \cf2 (Exception e) \{\line     e.printStackTrace()\cf3 ;\line\cf2\}\f4  substituir o exeception pelo erro de verdade eh uma boa partica\f2\par
+\f4\par
+\f2\par
+\line\cf6\f4\par
+\cf2\par
+\f2\line\par
+\par
+\par
+\f4\par
+\par
+\par
+\par
+\cf3\f2\par
+\par
+\par
+\cf0\f0\fs22\lang22 Exer. Fun\'e7\'e3o que pergunta um numero de notas a ser somados e depois faz a media.\par
+\cf3\f2\fs30 public class \cf2 OlaMundo \{\line\line     \cf3 public static void \cf9 main\cf2 (String[] args) \{\line\line     Scanner entrada = \cf3 new \cf2 Scanner(System.\cf5\i in\cf2\i0 )\cf3 ;\line\line         \cf2 System.\cf5\i out\cf2\i0 .print(\cf10 "Quantas notas: "\cf2 )\cf3 ;\line\line         int \cf2 qtdeNotas = entrada.nextInt()\cf3 ;\cf6 // quantas notas\line\line         \cf3 double\cf2 [] notas = \cf3 new double\cf2 [qtdeNotas]\cf3 ; \cf6 // quantidades de notas e colocando numa lista\line\line         \cf3 for \cf2 (\cf3 int \cf2 i =\cf7 0\cf3 ; \cf2 i < notas.\cf5 length\cf3 ; \cf2 i++) \{\cf6 // for nomal, onde come\f4\'e7a, ate onde vai, e o que faz\line             \cf2 System.\cf5\i out\cf2\i0 .print(\cf10 "informe a nota " \cf2 + (i+\cf7 1\cf2 ) + \cf10 ": "\cf2 )\cf3 ;\line             \cf2 notas[i] = entrada.nextDouble()\cf3 ;\line         \cf2\}\line\line         \cf3 double \cf2 total = \cf7 0\cf3 ;\line         for \cf2 (\cf3 double \cf2 nota: notas)\{\cf6 // fot each\line             \cf2 total += nota\cf3 ;\line         \cf2\}\line         \cf3 double \cf2 media = total / notas.\cf5 length\cf3 ;\line         \cf2 System.\cf5\i out\cf2\i0 .println(\cf10 "A media  eh " \cf2 + media + \cf10 "!"\cf2 )\cf3 ;\line     \cf2 entrada.close()\cf3 ;\line     \cf2\}\line\}\line\par
+\par
+\par
+\cf0\f0\fs22 Exer. Fun\'e7\'e3o que pergunta um numero de alunos e o numero de avalia\'e7oes. Imprime media da turma bem como uma matriz de dados\par
+\cf2\f2\fs30 System.\cf5\i out\cf2\i0 .print(\cf10 "quantos alunos "\cf2 )\cf3 ;\line int \cf2 qtdeAlunos = entrada.nextInt()\cf3 ;\line\line\line\cf2 System.\cf5\i out\cf2\i0 .print(\cf10 "quantas notas por alunos "\cf2 )\cf3 ;\line int \cf2 qtdeNotas = entrada.nextInt()\cf3 ;\line\line double \cf2 [] [] notasDaTurma = \cf3 new double\cf2 [qtdeAlunos][qtdeAlunos]\cf3 ; \cf6 //trasnforma\f4\'e7ao de dados numa matriz\line\line\cf3 double \cf2 total = \cf7 0\cf3 ;\line for \cf2 (\cf3 int \cf2 a = \cf7 0\cf3 ; \cf2 a < notasDaTurma.\cf5 length\cf3 ; \cf2 a++) \{\line     \cf3 for \cf2 (\cf3 int \cf2 n = \cf7 0\cf3 ; \cf2 n < notasDaTurma[a].\cf5 length\cf3 ; \cf2 n++) \{\line\line         System.\cf5\i out\cf2\i0 .printf(\cf10 "informe a nota %d do aluno %d: "\cf3 , \cf2 n + \cf7 1\cf3 , \cf2 a +\cf7 1\cf2 )\cf3 ;\cf6 // o +1 eh para nao come\'e7ar no 0\line         \cf2 notasDaTurma [a] [n] = entrada.nextDouble()\cf3 ;\line         \cf2 total += notasDaTurma [a] [n]\cf3 ;\line\line     \cf2\}\line\}\line\line\cf3 double \cf2 media = total / (qtdeAlunos * qtdeNotas)\cf3 ;\line\cf2 System.\cf5\i out\cf2\i0 .println(\cf10 "media da turma eh " \cf2 + media)\cf3 ;\line\line for \cf2 (\cf3 double\cf2 [] notasDoAluno: notasDaTurma) \{\cf6 // gera a matriz para impressao\line     \cf2 System.\cf5\i out\cf2\i0 .println(Arrays.\i toString\i0 (notasDoAluno))\cf3 ;\cf6 //tranforma uma array em string\line\cf2\}\line\par
+\par
+\cf3\lang1046\par
+\par
+\par
+\par
+\f2\par
+\cf1\f4 swing \par
+\par
+\cf6\par
+\cf1\f0\fs22\lang22 JOptionPane.showInputDialog("vamos"); \cf0 abre uma caixa para um textfield\par
+\par
+SwingUtilities.invokeLater(() -> \{ Este mdetodo garnate que temos de alguma modifica\'e7ao ser renderizado novamente\par
+repaint();\par
+validade();\par
+\});\par
+\par
+Jframe, eh uma janela.\par
+JPanel, eh um tipo de container que pode organizar os itens de dentro.\par
+setLayout(), diz como sera o organiza\'e7ao do layout\par
+GridLayout, layout em forma de grid\par
+setOpaque(true) , define a opacidade\par
+setBorder(BorderFactory.createBevelBorder(Color. alguma coisa)), eh o tipo da borda\par
+setText, o testo em algo\par
+serForeground(Color.algumacoisa). diz qual sera a cor do texto\par
+\par
+Para funcionar a classe deve estender uma outra classe do swing, como JFrame. Neste caso nao precisa instanciar, caso contrario precisaria.\par
+\cf3\f2\fs30 extends \cf2 JFrame \{\par
+\cf3\f4\lang1046\par
+\cf0\f0\fs22\lang22 setTitle(), eh o titulo, canto superior da aplica\'e7ao.\par
+setSize (), eh o tamanho que a janela ira abrir.\par
+setLocationRelativeTo(), posi\'e7ao inicial da tela. Se for null, centraliza.\par
+setVisible(), nescessario em true, para que a tela seja visivel.\par
+setDefaultCloseOperation(DISPOSE_ON_CLOSE), cria o comando que permite fechar pelo x \par
+mousePressed e demais, indica o uso do mouse eh o que ele faz.\cf3\f2\fs30\lang1046\par
+\f4\par
+\cf2\f2\par
+\cf0\f0\fs22\lang22\par
+}
+ 
